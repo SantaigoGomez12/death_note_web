@@ -1,0 +1,151 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a:hover {
+  -webkit-text-decoration: underline #ff6565;
+          text-decoration: underline #ff6565;
+}
+
+header {
+  background-image: url(../img/fondo-header/fondo-ryuk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 50rem;
+  width: 100vw;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.945);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+}
+
+.header__logo--img {
+  width: 20rem;
+  margin-left: 2rem;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav--a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  margin: 0 1.5rem;
+}
+
+.header__register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__register .details__titulo--h1 {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  margin: 0 1.5rem;
+  margin-right: 4.5rem;
+}
+
+.details__titulo {
+  list-style: none;
+  position: relative;
+  top: 1rem;
+}
+
+.details__paginas {
+  position: absolute;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.945);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.details__paginas--a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  margin: 0 1.5rem;
+}
+
+.header__register .header__register--a1 {
+  background-color: red;
+  padding: 1rem 2.5rem;
+}
+
+.header__register--a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  margin: 0 1.5rem;
+  margin-right: 2.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .header__nav--a {
+    display: none;
+  }
+  .header__register .header__register--a1 {
+    padding: 0.5rem !important;
+  }
+  .details__titulo {
+    top: 0.4rem;
+    margin-right: 0.5rem !important;
+  }
+  .header__register--a {
+    margin-right: 0.8rem !important;
+  }
+  header {
+    height: 25rem !important;
+    width: 100vw !important;
+  }
+  .header__logo--img {
+    width: 12rem !important;
+  }
+  .header__register .details__titulo--h1 {
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .header__logo--img {
+    width: 15rem;
+  }
+  .header__nav--a {
+    font-size: 1.7rem;
+    margin: 0 0.8rem;
+  }
+  .header__register .details__titulo--h1 {
+    margin-right: 0.5rem;
+  }
+  .header__register .header__register--a1 {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
