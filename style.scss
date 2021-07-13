@@ -214,8 +214,7 @@ header {
 }
 .footer_redes--h2 {
     @include links;
-    background-color: rgba(102, 51, 153, 0.281);
-    border-radius: 1rem;
+    background-color: rgba(96, 51, 141, 0.075);
     text-align: center;
     margin: 1rem 0rem;
     padding: 0rem 3rem;
@@ -290,9 +289,8 @@ header {
         padding: 1rem;
     }
     .footer_redes {
-        border-bottom: solid white 0.1rem;
         align-items: center;
-        order: 1;
+        order: 3;
         padding-right: 0;
         padding-bottom: 2rem;
     }
@@ -305,8 +303,13 @@ header {
         border-top: none;
     }
     .footer_terminos {
+        border-bottom: solid white 0.1rem;
         margin-top: 1rem;
-        order: 3;
+        order: 1;
         margin-left: 0;
     }
+}
+.redes__informa {
+    display: flex;
+    flex-direction: column;
 }
