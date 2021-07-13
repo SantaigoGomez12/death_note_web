@@ -199,10 +199,9 @@ header {
     }
 }
 // FOOTER
-.section--footer {
-    display: grid;
-}
 .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     min-height: 20rem;
     background-color: #4444;
     padding: 5rem;
@@ -216,6 +215,7 @@ header {
 .footer_redes--h2 {
     @include links;
     background-color: rgba(102, 51, 153, 0.281);
+    border-radius: 1rem;
     text-align: center;
     margin: 1rem 0rem;
     padding: 0rem 3rem;
@@ -232,6 +232,7 @@ header {
     display: flex;
     border-right: solid white;
     padding-right: 5rem;
+    justify-content: center;
 }
 .footer_informacion--img {
     width: 3rem;
@@ -241,6 +242,8 @@ header {
 .footer_terminos {
     display: flex;
     margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 .footer_terminos-img {
     width: 15rem;
@@ -256,16 +259,54 @@ header {
     font-size: 1.5rem;
     margin: 0.5rem 0rem;
 }
-// @media only screen and (max-width: 750px) {
-//     .footer {
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: center;
-//     }
-//     .footer_redes {
-//         border-right: none;
-//     }
-//     .footer_informacion {
-//         border-right: none;
-//     }
-// }
+@media only screen and (max-width: 800px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer_redes {
+        border-right: none;
+        order: 2;
+        padding-bottom: 2rem;
+        padding-right: 0;
+    }
+    .footer_informacion {
+        border-right: none;
+        order: 3;
+        grid-column: 1/3;
+        align-items: center;
+        text-align: end;
+        margin-top: 4rem;
+        border-top: solid white 0.1rem;
+    }
+    .footer_terminos {
+        order: 1;
+        padding-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .footer_redes {
+        border-bottom: solid white 0.1rem;
+        align-items: center;
+        order: 1;
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+    .footer_informacion {
+        border-bottom: solid white 0.1rem;
+        margin-top: 1rem;
+        order: 2;
+        padding-right: 0;
+        padding-bottom: 2rem;
+        border-top: none;
+    }
+    .footer_terminos {
+        margin-top: 1rem;
+        order: 3;
+        margin-left: 0;
+    }
+}
